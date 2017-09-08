@@ -13,6 +13,7 @@
 		07333FAA1F62D94100A7488A /* Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07333FA81F62D94100A7488A /* Cell.swift */; };
 		07333FAB1F62D94100A7488A /* Cell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 07333FA91F62D94100A7488A /* Cell.xib */; };
 		07333FAD1F62DC9B00A7488A /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07333FAC1F62DC9B00A7488A /* Item.swift */; };
+		07333FAF1F62EA9300A7488A /* DropInteractionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07333FAE1F62EA9300A7488A /* DropInteractionView.swift */; };
 		07D300E91F62D1BA0067600C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07D300E81F62D1BA0067600C /* AppDelegate.swift */; };
 		07D300EB1F62D1BA0067600C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07D300EA1F62D1BA0067600C /* ViewController.swift */; };
 		07D300EE1F62D1BA0067600C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07D300EC1F62D1BA0067600C /* Main.storyboard */; };
@@ -28,6 +29,7 @@
 		07333FA81F62D94100A7488A /* Cell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cell.swift; sourceTree = "<group>"; };
 		07333FA91F62D94100A7488A /* Cell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Cell.xib; sourceTree = "<group>"; };
 		07333FAC1F62DC9B00A7488A /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		07333FAE1F62EA9300A7488A /* DropInteractionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropInteractionView.swift; sourceTree = "<group>"; };
 		07D300E51F62D1BA0067600C /* DragAndDropDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DragAndDropDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		07D300E81F62D1BA0067600C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		07D300EA1F62D1BA0067600C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -68,6 +70,7 @@
 		07D300E71F62D1BA0067600C /* DragAndDropDemo */ = {
 			isa = PBXGroup;
 			children = (
+				07333FAE1F62EA9300A7488A /* DropInteractionView.swift */,
 				07D300E81F62D1BA0067600C /* AppDelegate.swift */,
 				07D300EA1F62D1BA0067600C /* ViewController.swift */,
 				07333FA61F62D51400A7488A /* ContainerView.swift */,
@@ -158,6 +161,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				07333FAF1F62EA9300A7488A /* DropInteractionView.swift in Sources */,
 				07333FA51F62D4A900A7488A /* RightContainerView.swift in Sources */,
 				07D300FB1F62D2700067600C /* ALViewExtension.swift in Sources */,
 				07333FA71F62D51400A7488A /* ContainerView.swift in Sources */,

@@ -27,8 +27,17 @@ class ViewController: UIViewController
         
         let rightView = RightContainerView()
         self.view.addSubview(rightView)
-        rightView.pinEdgesToParent([.right, .top, .bottom]).activate()
+        rightView.pinEdgesToParent([.right, .bottom]).activate()
+        rightView.pinEdgeToParent(.top, withPadding: 100).activate()
         rightView.setWidthRelatedToParent(percent: 0.5).activate()
+        
+        let dropView = DropInteractionView()
+        dropView.backgroundColor = .yellow
+        self.view.addSubview(dropView)
+        
+        dropView.pinEdgesToParent([.top, .right]).activate()
+        dropView.alignAttribute(.left, toSibling: leftView, withAttribute: .right).activate()
+        dropView.alignAttribute(.bottom, toSibling: rightView, withAttribute: .top).activate()
     }
     
 
