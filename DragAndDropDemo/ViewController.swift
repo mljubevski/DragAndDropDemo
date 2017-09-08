@@ -8,18 +8,46 @@
 
 import UIKit
 
-class ViewController: UIViewController {
-
-    override func viewDidLoad() {
+class ViewController: UIViewController
+{
+    
+    override func viewDidLoad()
+    {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        self.initializeUI()
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    
+    private func initializeUI()
+    {
+        let leftView = LeftContainerView()
+        self.view.addSubview(leftView)
+        leftView.pinEdgesToParent([.left, .top, .bottom]).activate()
+        leftView.setWidthRelatedToParent(percent: 0.5).activate()
+        
+        let rightView = RightContainerView()
+        self.view.addSubview(rightView)
+        rightView.pinEdgesToParent([.right, .top, .bottom]).activate()
+        rightView.setWidthRelatedToParent(percent: 0.5).activate()
     }
-
+    
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
